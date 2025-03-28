@@ -57,7 +57,7 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-5xl font-light mb-4">Outfit Ideas</h1>
-          <p className="text-gray-300 text-xl w-xl">
+          <p className="text-gray-300 text-xl md:w-xl">
             Get inspired by our community. Real customers like you styling
             great outfits based on our garments
           </p>
