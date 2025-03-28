@@ -42,13 +42,13 @@ const Navbar = () => {
      animate={{
         y: visible ? 0 : -100,
         opacity: visible ? 1 : 0,
-        backgroundColor: lastScroll > 1 ? "#ffffff": "rgba(0, 0, 0, 0)"
+        backgroundColor: lastScroll > 1 ? "#ffffff": "transparent"
         
      }}
      transition={{duration: 0.5, ease: "easeInOut"}}
 
 
-     className={`sticky w-full top-0 p-4 min-h-[3pc] ${dosis.className}`}>
+     className={`sticky w-full top-0 p-4 min-h-[3pc] ${dosis.className} z-50`}>
         
         <div className='flex justify-between items-center'>
             <div className='flex justify-center items-center gap-6'>
@@ -83,7 +83,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100%" , transition: {duration: 0.4, ease: "easeInOut"}}}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-[18rem] h-full shadow-lg shadow-gray-700 z-50 p-6 bg-gradient-to-t from-gray-800 via-gray-600 to-gray-700 "
+            className="fixed top-0 left-0 w-[18rem] h-full shadow-lg shadow-gray-700 z-[100] p-6 bg-[#B35A2E]"
           >
             
             <div className="flex justify-between items-center">

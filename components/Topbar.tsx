@@ -16,6 +16,7 @@ const Topbar = () => {
 
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
+    
 
     useEffect(() => {
         const intervalId = setInterval(() => {
