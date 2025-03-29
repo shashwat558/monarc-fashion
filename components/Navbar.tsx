@@ -3,7 +3,12 @@
 import React, { useEffect, useState } from 'react'
 import {AnimatePresence, motion} from "framer-motion";
 import { Globe, Menu, MessagesSquare, MoveUpRight, ShoppingBag, User, X } from 'lucide-react';
-import { Dosis } from 'next/font/google';
+import { Charm, Dosis } from 'next/font/google';
+
+const charm = Charm({
+  weight: "700",
+  subsets: ["latin"]
+})
 
 const dosis = Dosis({
     weight: "400",
@@ -63,7 +68,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='lg:mr-44 flex items-center'>
-                <h1 className={`font-[900] text-center text-3xl ${lastScroll>1 ? "text-black" : "text-white"}`}>Monarc</h1>
+              <h1 className={`${charm.className} font-[1000] text-center text-3xl ${lastScroll>1 ? "text-black" : "text-white"}`}>KH BESPOKE</h1>
             </div>
             <div className={`flex justify-center items-center gap-8 ${lastScroll > 1 ? "text-black": "text-white"}`}>
                 <MessagesSquare className='w-5 h-5'/>
